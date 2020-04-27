@@ -61,4 +61,4 @@ Disallow: /
 User-agent: ZoominfoBot
 Disallow: /
 
-Sitemap: https://example.com/zh-cn/sitemap.xml
+Sitemap: https://toddlam.github.io/zh-cn/sitemap.xml
