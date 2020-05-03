@@ -2,123 +2,106 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://toddlam.github.io/zh-cn/theme-documentation-basics/</loc><lastmod>2020-04-26T23:57:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://toddlam.github.io/theme-documentation-basics/</loc><lastmod>2020-03-06T21:40:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://toddlam.github.io/theme-documentation-basics/"
+                        href="https://toddlam.github.io/en/theme-documentation-basics/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
-                    href="https://toddlam.github.io/zh-cn/theme-documentation-basics/"
+                    href="https://toddlam.github.io/theme-documentation-basics/"
                     /></url><url>
-            <loc>https://toddlam.github.io/zh-cn/theme-documentation-content/</loc><lastmod>2020-04-26T23:57:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://toddlam.github.io/theme-documentation-content/</loc><lastmod>2020-03-05T16:30:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://toddlam.github.io/theme-documentation-content/"
+                        href="https://toddlam.github.io/en/theme-documentation-content/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
-                    href="https://toddlam.github.io/zh-cn/theme-documentation-content/"
+                    href="https://toddlam.github.io/theme-documentation-content/"
                     /></url><url>
-            <loc>https://toddlam.github.io/zh-cn/basic-markdown-syntax/</loc><lastmod>2020-04-26T23:57:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://toddlam.github.io/basic-markdown-syntax/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://toddlam.github.io/basic-markdown-syntax/"
+                        href="https://toddlam.github.io/en/basic-markdown-syntax/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
-                    href="https://toddlam.github.io/zh-cn/basic-markdown-syntax/"
+                    href="https://toddlam.github.io/basic-markdown-syntax/"
                     /></url><url>
-            <loc>https://toddlam.github.io/zh-cn/emoji-support/</loc><lastmod>2020-04-26T23:57:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://toddlam.github.io/my-first-post/</loc><lastmod>2020-04-19T22:12:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://toddlam.github.io/posts/</loc><lastmod>2020-04-19T22:12:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://toddlam.github.io/emoji-support/"
+                        href="https://toddlam.github.io/en/posts/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
-                    href="https://toddlam.github.io/zh-cn/emoji-support/"
+                    href="https://toddlam.github.io/posts/"
                     /></url><url>
-            <loc>https://toddlam.github.io/zh-cn/categories/</loc><lastmod>2020-04-26T23:57:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://toddlam.github.io/</loc><lastmod>2020-04-19T22:12:17&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://toddlam.github.io/categories/"
+                        href="https://toddlam.github.io/en/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
-                    href="https://toddlam.github.io/zh-cn/categories/"
+                    href="https://toddlam.github.io/"
                     /></url><url>
-            <loc>https://toddlam.github.io/zh-cn/categories/documentation/</loc><lastmod>2020-04-26T23:57:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://toddlam.github.io/categories/</loc><lastmod>2020-03-06T21:40:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://toddlam.github.io/categories/documentation/"
+                        href="https://toddlam.github.io/en/categories/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
-                    href="https://toddlam.github.io/zh-cn/categories/documentation/"
+                    href="https://toddlam.github.io/categories/"
                     /></url><url>
-            <loc>https://toddlam.github.io/zh-cn/posts/</loc><lastmod>2020-04-26T23:57:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://toddlam.github.io/categories/documentation/</loc><lastmod>2020-03-06T21:40:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://toddlam.github.io/posts/"
+                        href="https://toddlam.github.io/en/categories/documentation/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
-                    href="https://toddlam.github.io/zh-cn/posts/"
+                    href="https://toddlam.github.io/categories/documentation/"
                     /></url><url>
-            <loc>https://toddlam.github.io/zh-cn/tags/</loc><lastmod>2020-04-26T23:57:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://toddlam.github.io/tags/</loc><lastmod>2020-03-06T21:40:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://toddlam.github.io/tags/"
+                        href="https://toddlam.github.io/en/tags/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
-                    href="https://toddlam.github.io/zh-cn/tags/"
+                    href="https://toddlam.github.io/tags/"
                     /></url><url>
-            <loc>https://toddlam.github.io/zh-cn/tags/%E5%AE%89%E8%A3%85/</loc><lastmod>2020-04-26T23:57:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://toddlam.github.io/zh-cn/tags/%E9%85%8D%E7%BD%AE/</loc><lastmod>2020-04-26T23:57:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://toddlam.github.io/zh-cn/tags/markdown/</loc><lastmod>2020-04-26T23:57:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://toddlam.github.io/tags/%E5%AE%89%E8%A3%85/</loc><lastmod>2020-03-06T21:40:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://toddlam.github.io/tags/%E9%85%8D%E7%BD%AE/</loc><lastmod>2020-03-06T21:40:32&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://toddlam.github.io/tags/markdown/</loc><lastmod>2020-03-05T16:30:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://toddlam.github.io/tags/markdown/"
+                        href="https://toddlam.github.io/en/tags/markdown/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
-                    href="https://toddlam.github.io/zh-cn/tags/markdown/"
+                    href="https://toddlam.github.io/tags/markdown/"
                     /></url><url>
-            <loc>https://toddlam.github.io/zh-cn/tags/%E5%86%85%E5%AE%B9/</loc><lastmod>2020-04-26T23:57:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>https://toddlam.github.io/zh-cn/categories/markdown/</loc><lastmod>2020-04-26T23:57:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://toddlam.github.io/tags/%E5%86%85%E5%AE%B9/</loc><lastmod>2020-03-05T16:30:05&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://toddlam.github.io/categories/markdown/</loc><lastmod>2020-01-01T16:45:40&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://toddlam.github.io/categories/markdown/"
+                        href="https://toddlam.github.io/en/categories/markdown/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
-                    href="https://toddlam.github.io/zh-cn/categories/markdown/"
+                    href="https://toddlam.github.io/categories/markdown/"
                     /></url><url>
-            <loc>https://toddlam.github.io/zh-cn/tags/emoji/</loc><lastmod>2020-04-26T23:57:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
+            <loc>https://toddlam.github.io/about/</loc><lastmod>2019-08-02T11:04:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
                         rel="alternate"
                         hreflang="en"
-                        href="https://toddlam.github.io/tags/emoji/"
+                        href="https://toddlam.github.io/en/about/"
                         /><xhtml:link
                     rel="alternate"
                     hreflang="zh-cn"
-                    href="https://toddlam.github.io/zh-cn/tags/emoji/"
-                    /></url><url>
-            <loc>https://toddlam.github.io/zh-cn/about/</loc><lastmod>2020-04-26T23:57:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://toddlam.github.io/about/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="zh-cn"
-                    href="https://toddlam.github.io/zh-cn/about/"
-                    /></url><url>
-            <loc>https://toddlam.github.io/zh-cn/</loc><lastmod>2020-04-26T23:57:39&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority><xhtml:link
-                        rel="alternate"
-                        hreflang="en"
-                        href="https://toddlam.github.io/"
-                        /><xhtml:link
-                    rel="alternate"
-                    hreflang="zh-cn"
-                    href="https://toddlam.github.io/zh-cn/"
+                    href="https://toddlam.github.io/about/"
                     /></url></urlset>
