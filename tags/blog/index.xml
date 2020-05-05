@@ -1,10 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>markdown - 分类 - TL-B</title>
-        <link>http://orz.xyz/categories/markdown/</link>
-        <description>markdown - 分类 - TL-B</description>
+        <title>blog - 标签 - TL-B</title>
+        <link>http://orz.xyz/tags/blog/</link>
+        <description>blog - 标签 - TL-B</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>toddlylin@hotmail.com (ToddLam)</managingEditor>
-            <webMaster>toddlylin@hotmail.com (ToddLam)</webMaster><lastBuildDate>Tue, 05 May 2020 21:56:02 &#43;0800</lastBuildDate><atom:link href="http://orz.xyz/categories/markdown/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>toddlylin@hotmail.com (ToddLam)</webMaster><lastBuildDate>Tue, 05 May 2020 21:56:02 &#43;0800</lastBuildDate><atom:link href="http://orz.xyz/tags/blog/" rel="self" type="application/rss+xml" /><item>
     <title>Hello World</title>
     <link>http://orz.xyz/hello-world/</link>
     <pubDate>Tue, 05 May 2020 21:56:02 &#43;0800</pubDate>
