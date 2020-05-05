@@ -1,8 +1,8 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
-        <title>markdown - 分类 - ToddLam’s Blog</title>
+        <title>markdown - 分类 - TL-B</title>
         <link>http://orz.xyz/categories/markdown/</link>
-        <description>markdown - 分类 - ToddLam’s Blog</description>
+        <description>markdown - 分类 - TL-B</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>toddlylin@hotmail.com (ToddLam)</managingEditor>
             <webMaster>toddlylin@hotmail.com (ToddLam)</webMaster><lastBuildDate>Tue, 01 Oct 2019 17:55:28 &#43;0800</lastBuildDate><atom:link href="http://orz.xyz/categories/markdown/" rel="self" type="application/rss+xml" /><item>
     <title>Emoji Support</title>
