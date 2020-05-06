@@ -12,8 +12,7 @@
     <guid>https://me.orz.xyz/why-bloging/</guid>
     <description><![CDATA[<div class="featured-image">
                 <img src="/cover.jpg" referrerpolicy="no-referrer">
-            </div><p>因为我行啊
-<br>
-New To Hugo World!</p>]]></description>
+            </div><h2 id="why-blogging">Why Blogging</h2>
+<p>因为我行呀</p>]]></description>
 </item></channel>
 </rss>
