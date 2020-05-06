@@ -2,13 +2,12 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://orz.xyz/tags/blog/</loc><lastmod>2020-05-05T21:56:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://orz.xyz/categories/</loc><lastmod>2020-05-05T21:56:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://orz.xyz/hello-world/</loc><lastmod>2020-05-05T21:56:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://orz.xyz/tags/helloworld/</loc><lastmod>2020-05-05T21:56:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://orz.xyz/categories/markdown/</loc><lastmod>2020-05-05T21:56:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://orz.xyz/posts/</loc><lastmod>2020-05-05T21:56:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://orz.xyz/tags/</loc><lastmod>2020-05-05T21:56:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://orz.xyz/</loc><lastmod>2020-05-05T21:56:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://orz.xyz/categories/documentation/</loc><lastmod>2020-05-05T21:56:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
-            <loc>http://orz.xyz/about/</loc><lastmod>2019-08-02T11:04:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
+            <loc>https://me.orz.xyz/about/</loc><lastmod>2019-08-02T11:04:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://me.orz.xyz/</loc><lastmod>2019-08-02T11:04:49&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://me.orz.xyz/categories/</loc><lastmod>2010-09-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://me.orz.xyz/tags/helloworld/</loc><lastmod>2010-09-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://me.orz.xyz/categories/markdown/</loc><lastmod>2010-09-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://me.orz.xyz/posts/</loc><lastmod>2010-09-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://me.orz.xyz/tags/</loc><lastmod>2010-09-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://me.orz.xyz/why-bloging/</loc><lastmod>2010-09-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url><url>
+            <loc>https://me.orz.xyz/categories/documentation/</loc><lastmod>2010-09-01T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>0.5</priority></url></urlset>
