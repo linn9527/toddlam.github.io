@@ -10,8 +10,7 @@ linux 的好 都懂，windows 的好 也都懂，小孩子才做选择题「..�
 2. 作为程序狗，Linux 可能在某些方面比较友好，尝试在日常使用
 3. QQ聊天、IE网银等无法直接放弃
 
-![守护的笑容](https://gitee.com/toddlam/Colony/raw/master/pic/2020-05-08/SIcXQF.jpeg)
-
+![守护的笑容](https://gitee.com/toddlam/Colony/raw/master/pic/2020-05-08/SIcXQF.jpeg "守护的笑容")
 
 -------
 

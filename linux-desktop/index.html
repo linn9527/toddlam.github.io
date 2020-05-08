@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>自己搭建Linux桌面环境 - TL-B</title>
+        <meta name="Description" content="走走南北 写写东西"><meta property="og:title" content="自己搭建Linux桌面环境" />
+<meta property="og:description" content="就想自己折腾一下桌面环境搭建" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://me.orz.xyz/linux-desktop/" />
+<meta property="article:published_time" content="2014-08-06T16:15:06+08:00" />
+<meta property="article:modified_time" content="2014-08-06T16:15:06+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="自己搭建Linux桌面环境"/>
+<meta name="twitter:description" content="就想自己折腾一下桌面环境搭建"/>
+<meta name="application-name" content="O·R·Z">
+<meta name="apple-mobile-web-app-title" content="O·R·Z"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://me.orz.xyz/linux-desktop/" /><link rel="prev" href="https://me.orz.xyz/duel-system-leptop/" /><link rel="next" href="https://me.orz.xyz/linux-desktop-reinforce/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "自己搭建Linux桌面环境",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/me.orz.xyz\/linux-desktop\/"
+        },"image": {
+                "@type": "ImageObject",
+                "url": "https:\/\/me.orz.xyz\/static\/avatar_1.png",
+                "width":  800 ,
+                "height":  600 
+            },"genre": "posts","keywords": "linux, shell","wordcount":  1403 ,
+        "url": "https:\/\/me.orz.xyz\/linux-desktop\/","datePublished": "2014-08-06T16:15:06+08:00","dateModified": "2014-08-06T16:15:06+08:00","publisher": {
+                "@type": "Organization",
+                "name": "ToddLam",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/me.orz.xyz\/static\/avatar_1.png",
+                "width":  127 ,
+                "height":  40 
+                }
+            },"author": {
+                "@type": "Person",
+                "name": "阿D"
+            },"description": ""
+    }
+    </script></head>
+    <body><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="TL-B">记事本</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="TL-B">记事本</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">自己搭建Linux桌面环境</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>阿D</a></span>&nbsp;
+                    <span class="post-category">收录于<a href="/categories/documentation/">
+                                <i class="far fa-folder fa-fw"></i>文档
+                            </a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2014-08-06>2014-08-06</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 1403 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>预计阅读 3 分钟&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading/normal.min.svg"
+        data-src="/cover.jpg"
+        data-srcset="/cover.jpg, /cover.jpg 1.5x, /cover.jpg 2x"
+        data-sizes="auto"
+        alt="/cover.jpg"
+        title="/cover.jpg" /></div><div class="details toc" id="toc-static">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#前言">前言</a></li>
+    <li><a href="#需求">需求</a></li>
+    <li><a href="#工具选择">工具选择</a>
+      <ul>
+        <li><a href="#系统基础软件">系统基础软件</a></li>
+        <li><a href="#应用工具">应用工具</a></li>
+      </ul>
+    </li>
+    <li><a href="#安装">安装</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>就想自己折腾一下桌面环境搭建</p>
+<h2 id="前言">前言</h2>
+<blockquote>
+<p>若要让自己选择Linux桌面环境，要么就来个KDE，不需要再有什么额外的东东，办公代码一应俱全，特效也还是可以的，要么来个Cinnamon，同样挺漂亮的，相比那些节约内存的桌面环境，用着更舒服、养眼～（习惯与平铺式桌面的用户当然就另当别论啦），当然，内存应该消耗在运行的软件上，而不是在所谓漂亮的桌面上，这点我也是认同的，So，如果真需要选择一款低内存消耗的，那就Mate吧（好像也不是很低）
+所以，我可以自己组织搭建</p>
+</blockquote>
+<p><a href="/duel-system-leptop" rel="">假设驱动已经安装完</a></p>
+<h2 id="需求">需求</h2>
+<ul>
+<li>
+<p>登陆管理器，DM</p>
+</li>
+<li>
+<p>桌面需要使用鼠标</p>
+</li>
+<li>
+<p>需要展示时间，系统托盘，任务栏，快捷起动栏</p>
+</li>
+<li>
+<p>有桌面图标 OR 有系统监测</p>
+</li>
+</ul>
+<h2 id="工具选择">工具选择</h2>
+<h3 id="系统基础软件">系统基础软件</h3>
+<p>slim 作为登陆管理器</p>
+<p>openbox 作为窗口管理器</p>
+<p>feh 设置墙纸</p>
+<p>tint2 （tint-svn）作为面板提供任务栏、系统托盘、快捷启动栏</p>
+<p>conky （conky-lua）作为系统监测</p>
+<p>pcmanfm 作为文件管理器（也可以做桌面）</p>
+<h3 id="应用工具">应用工具</h3>
+<p>LibreOffice</p>
+<p>Mupdf（简单）看PDF，</p>
+<p>视频播放其VLC</p>
+<p>音乐播放器Exaile</p>
+<p>文本编辑器VIM、gedit</p>
+<p>浏览器Chromium</p>
+<p>输入法Fcitx小企鹅+sunpinyin</p>
+<p>音量托盘图标volumeicon</p>
+<h2 id="安装">安装</h2>
+<p>首先需要安装X11，<code>#pacman -S xorg-server xorg-xinit</code>，需要界面的东西离不开这两个东西</p>
+<p>安装yaourt，添加源<code>#vim /etc/pacman.conf</code></p>
+<pre><code>[archlinuxfr]
+SigLevel=Never
+Server=http://repo.archlinux.fr/$arch
+</code></pre>
+<p>更新<code>#pacman -Syy</code>，然后就可以安装了<code>#pacman -S yaourt</code></p>
+<ul>
+<li>Tips：可以先安装bash-completion，<code>#pacman -S bash-completion</code></li>
+</ul>
+<p>安装窗口管理器和配置工具，<code>#pacman -S openbox obmenu obconf menumaker</code>，然后编辑<code>.initrc</code>文件，在最后加上<code>exec openbox-session</code>，将<code>/etc/xdg/openbox/</code>中的文件复制到<code>$HOME/.config/openbox/</code>下</p>
+<p>安装DM，<code>#pacman -S slim</code>，然后添加开机启动<code>#systemctl enable slim@service</code></p>
+<p>安装面板以及tint2配置工具tintwizard，<code>yaourt -S tint2-svn tintwizard</code>，tintwizard并不支持快捷启动栏，而且会自动删除不支持的配置，所以每次配置后需要手动修改<code>$HOME/.config/tint2/tint2rc</code>，所以这个配置工具我用了一次就卸了，然后手动添加快捷启动栏的快捷方式，最后将<code>tint2 &amp;</code>加入Openbox的启动脚本<code>$HOME/.config/openbox/autostart</code>中</p>
+<p>安装系统监测conky，<code>yaourt -S conky-lua</code>，相对于conky多了对lua的支持，不需要另外配置lua，同样将<code>conky &amp;</code>添加到Openbox启动脚本中</p>
+<p>安装文件管理器，<code>#pacman -S pcmanfm ntfs-3g</code>，安装完后如果需要显示桌面，可以将<code>pcmanfm --desktop &amp;</code>替代<code>conky &amp;</code></p>
+<p>安装编辑器，<code>#pacman -S vim gedit</code></p>
+<p>安装音量图标，<code>#pacman -S volumeicon</code>，将<code>volumeicon &amp;</code>加到<code>tint2 &amp;</code>后面</p>
+<p>安装输入法，<code>#pacman -S fcitx-im sunpinyin</code>，编辑<code>.xinitrc</code>，加入环境变量</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">    <span class="nb">export</span> <span class="nv">GTK_IM_MODULE</span><span class="o">=</span>fcitx
+    <span class="nb">export</span> <span class="nv">QT_IM_MODULE</span><span class="o">=</span>fcitx
+    <span class="nb">export</span> <span class="nv">XMODIFIERS</span><span class="o">=</span><span class="s2">&#34;@im=fcitx&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>添加<code>fcitx &amp;</code>到Openbox启动脚本，在<code>tint2 &amp;</code>后</p>
+<p>办公软件，<code>#pacman -S libreoffice mupdf</code>
+视频音乐，<code>#pacman -S vlc</code>，<code>yaourt -S exaile</code>
+浏览器，<code>#pacman -S chromium</code></p>
+<p>顺便添加张桌面壁纸，<code>#pacman -S feh</code>，在Openbox启动脚本中加上<code>feh  --bg-scale '/path/of/desktop_image.jpg &amp;</code></p>
+<blockquote>
+<p>基本环境已经完成 虽然丑 至少能用</p>
+</blockquote></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>本文于 2014-08-06 更新</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://me.orz.xyz/linux-desktop/" data-title="自己搭建Linux桌面环境" data-hashtags="linux,shell"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://me.orz.xyz/linux-desktop/" data-hashtag="linux"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 WhatsApp" data-sharer="whatsapp" data-url="https://me.orz.xyz/linux-desktop/" data-title="自己搭建Linux桌面环境" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://me.orz.xyz/linux-desktop/" data-title="自己搭建Linux桌面环境"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://me.orz.xyz/linux-desktop/" data-title="自己搭建Linux桌面环境" data-image="cover.jpg"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Myspace" data-sharer="myspace" data-url="https://me.orz.xyz/linux-desktop/" data-title="自己搭建Linux桌面环境" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="分享到 Blogger" data-sharer="blogger" data-url="https://me.orz.xyz/linux-desktop/" data-title="自己搭建Linux桌面环境" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="https://me.orz.xyz/linux-desktop/" data-title="自己搭建Linux桌面环境"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/linux/">linux</a>,&nbsp;<a href="/tags/shell/">shell</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/duel-system-leptop/" class="prev" rel="prev" title="笔记本上双系统安装"><i class="fas fa-angle-left fa-fw"></i>笔记本上双系统安装</a>
+            <a href="/linux-desktop-reinforce/" class="next" rel="next" title="Linux桌面环境美化">Linux桌面环境美化<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">ToddLam</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript">
+    window.config = {"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"headerMode":{"desktop":"fixed","mobile":"auto"},"search":{"lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","noResultsFound":"没有找到结果","type":"lunr"}};
+</script><script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=Element.prototype.closest%2CrequestAnimationFrame%2CCustomEvent%2CPromise%2CObject.entries%2CObject.assign%2CObject.values%2Cfetch%2CElement.prototype.after%2CArray.prototype.fill%2CIntersectionObserver%2CArray.from%2CArray.prototype.find%2CMath.sign"></script><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/object-fit-images/ofi.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

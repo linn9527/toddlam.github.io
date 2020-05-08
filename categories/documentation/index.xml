@@ -4,7 +4,25 @@
         <link>https://me.orz.xyz/categories/documentation/</link>
         <description>文档 - 分类 - TL-B</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>toddlylin@hotmail.com (ToddLam)</managingEditor>
-            <webMaster>toddlylin@hotmail.com (ToddLam)</webMaster><lastBuildDate>Tue, 05 Aug 2014 23:14:06 &#43;0800</lastBuildDate><atom:link href="https://me.orz.xyz/categories/documentation/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>toddlylin@hotmail.com (ToddLam)</webMaster><lastBuildDate>Thu, 07 Aug 2014 16:33:02 &#43;0800</lastBuildDate><atom:link href="https://me.orz.xyz/categories/documentation/" rel="self" type="application/rss+xml" /><item>
+    <title>Linux桌面环境美化</title>
+    <link>https://me.orz.xyz/linux-desktop-reinforce/</link>
+    <pubDate>Thu, 07 Aug 2014 16:33:02 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://me.orz.xyz/linux-desktop-reinforce/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="https://gitee.com/toddlam/Colony/raw/master/pic/2020-05-08/473Ftg.jpg" referrerpolicy="no-referrer">
+            </div><p>处理完的桌面环境看着比我还磕碜</p>]]></description>
+</item><item>
+    <title>自己搭建Linux桌面环境</title>
+    <link>https://me.orz.xyz/linux-desktop/</link>
+    <pubDate>Wed, 06 Aug 2014 16:15:06 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://me.orz.xyz/linux-desktop/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/cover.jpg" referrerpolicy="no-referrer">
+            </div><p>就想自己折腾一下桌面环境搭建</p>]]></description>
+</item><item>
     <title>笔记本上双系统安装</title>
     <link>https://me.orz.xyz/duel-system-leptop/</link>
     <pubDate>Tue, 05 Aug 2014 23:14:06 &#43;0800</pubDate>
