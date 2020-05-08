@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>linux - 标签 - TL-B</title>
+        <link>https://me.orz.xyz/tags/linux/</link>
+        <description>linux - 标签 - TL-B</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>toddlylin@hotmail.com (ToddLam)</managingEditor>
+            <webMaster>toddlylin@hotmail.com (ToddLam)</webMaster><lastBuildDate>Tue, 05 Aug 2014 23:14:06 &#43;0800</lastBuildDate><atom:link href="https://me.orz.xyz/tags/linux/" rel="self" type="application/rss+xml" /><item>
+    <title>笔记本上双系统安装</title>
+    <link>https://me.orz.xyz/duel-system-leptop/</link>
+    <pubDate>Tue, 05 Aug 2014 23:14:06 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://me.orz.xyz/duel-system-leptop/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/cover.jpg" referrerpolicy="no-referrer">
+            </div><p>linux 的好 都懂，windows 的好 也都懂，小孩子才做选择题「..「</p>]]></description>
+</item></channel>
+</rss>
