@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title>Javascript原生使用Ajax - TL-B</title>
+        <meta name="Description" content="走走南北 写写东西"><meta property="og:title" content="Javascript原生使用Ajax" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://me.orz.xyz/javascript-ajax/" />
+<meta property="article:published_time" content="2016-04-08T17:05:24+08:00" />
+<meta property="article:modified_time" content="2016-04-08T17:05:24+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Javascript原生使用Ajax"/>
+<meta name="twitter:description" content=""/>
+<meta name="application-name" content="O·R·Z">
+<meta name="apple-mobile-web-app-title" content="O·R·Z"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://me.orz.xyz/javascript-ajax/" /><link rel="prev" href="https://me.orz.xyz/linux-common-command/" /><link rel="next" href="https://me.orz.xyz/top-n/" /><link rel="stylesheet" href="/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/css/style.min.css"><link rel="stylesheet" href="/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Javascript原生使用Ajax",
+        "inLanguage": "zh-CN",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/me.orz.xyz\/javascript-ajax\/"
+        },"image": {
+                "@type": "ImageObject",
+                "url": "https:\/\/me.orz.xyz\/static\/avatar_1.png",
+                "width":  800 ,
+                "height":  600 
+            },"genre": "posts","keywords": "javascript","wordcount":  546 ,
+        "url": "https:\/\/me.orz.xyz\/javascript-ajax\/","datePublished": "2016-04-08T17:05:24+08:00","dateModified": "2016-04-08T17:05:24+08:00","publisher": {
+                "@type": "Organization",
+                "name": "ToddLam",
+                "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/me.orz.xyz\/static\/avatar_1.png",
+                "width":  127 ,
+                "height":  40 
+                }
+            },"author": {
+                "@type": "Person",
+                "name": "阿D"
+            },"description": ""
+    }
+    </script></head>
+    <body><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="TL-B">记事本</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> 所有 </a><a class="menu-item" href="/tags/"> 标签 </a><a class="menu-item" href="/categories/"> 分类 </a><span class="menu-item delimiter"></span><span class="menu-item search" id="search-desktop">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-desktop">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-desktop" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-desktop" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-desktop">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </span><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="TL-B">记事本</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><div class="search-wrapper">
+                    <div class="search mobile" id="search-mobile">
+                        <input type="text" placeholder="搜索文章标题或内容..." id="search-input-mobile">
+                        <a href="javascript:void(0);" class="search-button search-toggle" id="search-toggle-mobile" title="搜索">
+                            <i class="fas fa-search fa-fw"></i>
+                        </a>
+                        <a href="javascript:void(0);" class="search-button search-clear" id="search-clear-mobile" title="清空">
+                            <i class="fas fa-times-circle fa-fw"></i>
+                        </a>
+                        <span class="search-button search-loading" id="search-loading-mobile">
+                            <i class="fas fa-spinner fa-fw fa-spin"></i>
+                        </span>
+                    </div>
+                    <a href="javascript:void(0);" class="search-cancel" id="search-cancel-mobile">
+                        取消
+                    </a>
+                </div><a class="menu-item" href="/posts/" title="">所有</a><a class="menu-item" href="/tags/" title="">标签</a><a class="menu-item" href="/categories/" title="">分类</a><a href="javascript:void(0);" class="menu-item theme-switch" title="切换主题">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">目录</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animated flipInX">Javascript原生使用Ajax</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel=" author" class="author"><i class="fas fa-user-circle fa-fw"></i>阿D</a></span>&nbsp;
+                    <span class="post-category">收录于<a href="/categories/documentation/">
+                                <i class="far fa-folder fa-fw"></i>文档
+                            </a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw"></i><time datetime=2016-04-08>2016-04-08</time>&nbsp;
+                <i class="fas fa-pencil-alt fa-fw"></i>约 546 字&nbsp;
+                <i class="far fa-clock fa-fw"></i>预计阅读 2 分钟&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading/normal.min.svg"
+        data-src="/cover.jpg"
+        data-srcset="/cover.jpg, /cover.jpg 1.5x, /cover.jpg 2x"
+        data-sizes="auto"
+        alt="/cover.jpg"
+        title="/cover.jpg" /></div><div class="details toc" id="toc-static">
+                <div class="details-summary toc-title">
+                    <span>目录</span>
+                    <span><i class="details-icon fas fa-angle-right"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents"></nav></div>
+            </div><div class="content" id="content"><blockquote>
+<p>一般情况下，直接使用原生 Javascript 的代码是通用的</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="c1">// 创建 XMLHttpRequest 对象
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">xmlHttpRequestObject</span> <span class="o">=</span> <span class="kc">null</span><span class="p">;</span>
+<span class="k">if</span> <span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">ActiveXObject</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">xmlHttpRequestObject</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ActiveXObject</span><span class="p">(</span><span class="s2">&#34;Microsoft.XMLHTTP&#34;</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+	<span class="nx">xmlHttpRequestObject</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">XMLHttpRequest</span><span class="p">(</span><span class="p">)</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="s2">&#34;target.html&#34;</span><span class="p">;</span> <span class="c1">// 目标路径
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">data</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">;</span> <span class="c1">// 传输的数据
+</span><span class="c1"></span><span class="nx">xmlHttpRequestObject</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">&#34;POST&#34;</span> <span class="p">,</span> <span class="nx">url</span> <span class="p">,</span> <span class="kc">true</span><span class="p">)</span><span class="p">;</span> <span class="c1">// 第三个参数默认 true 异步 false 同步
+</span><span class="c1"></span><span class="nx">xmlHttpRequestObject</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="s2">&#34;Content-Type&#34;</span> <span class="p">,</span> <span class="s2">&#34;application/x-www-form-urlencoded&#34;</span><span class="p">)</span><span class="p">;</span>
+<span class="nx">xmlHttpRequestObject</span><span class="p">.</span><span class="nx">onreadystatechange</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// readyState产生变化时需要运行
+</span><span class="c1"></span>    <span class="k">if</span> <span class="p">(</span><span class="nx">xmlHttpRequestObject</span><span class="p">.</span><span class="nx">readyState</span> <span class="o">==</span> <span class="mi">4</span> <span class="o">&amp;&amp;</span> <span class="nx">xmlHttpRequestObject</span><span class="p">)</span> <span class="p">{</span>
+    	<span class="kd">var</span> <span class="nx">res</span> <span class="o">=</span> <span class="nx">xmlHttpRequestObject</span><span class="p">.</span><span class="nx">responseText</span><span class="p">;</span>
+        <span class="kd">var</span> <span class="nx">jsonObject</span> <span class="o">=</span> <span class="nb">eval</span><span class="p">(</span><span class="s2">&#34;(&#34;</span><span class="o">+</span><span class="nx">res</span><span class="o">+</span><span class="s2">&#34;)&#34;</span><span class="p">)</span><span class="p">;</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+<span class="nx">xmlHttpRequestObject</span><span class="p">.</span><span class="nx">send</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span><span class="p">;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>原生JS使用XMLHttpRequest对象进行异步通信，下面为该对象的主要属性与方法</p>
+<p>属性：onreadystatechange</p>
+<pre><code>在readyState变化时运行的方法
+</code></pre>
+<p>属性：readyState</p>
+<blockquote>
+<p>状态描述
+0 请求未初始化（在调用 open() 之前）
+1 请求已提出（调用 send() 之前）
+2 请求已发送（这里通常可以从响应得到内容头部）
+3 请求处理中（响应中通常有部分数据可用，但是服务器还没有完成响应）
+4 请求已完成（可以访问服务器响应并使用它）</p>
+</blockquote>
+<p>属性：responseText</p>
+<pre><code>由服务器返回的数据
+</code></pre>
+<p>方法：open(type,url,true/false)</p>
+<pre><code>初始化请求：第一个参数为请求类型，第二个参数为请求路径，第三个参数为是否异步传输
+</code></pre>
+<p>方法：send(data)</p>
+<pre><code>发送请求：data为传输的数据
+</code></pre>
+<p>方法：setRequestHeader(&ldquo;header&rdquo;,&ldquo;value&rdquo;);</p>
+<pre><code>设置请求头，Send之前</code></pre></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>本文于 2016-04-08 更新</span>
+            </div>
+            <div class="post-info-license"></div>
+        </div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="分享到 Twitter" data-sharer="twitter" data-url="https://me.orz.xyz/javascript-ajax/" data-title="Javascript原生使用Ajax" data-hashtags="javascript"><i class="fab fa-twitter fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Facebook" data-sharer="facebook" data-url="https://me.orz.xyz/javascript-ajax/" data-hashtag="javascript"><i class="fab fa-facebook-square fa-fw"></i></a><a href="javascript:void(0);" title="分享到 WhatsApp" data-sharer="whatsapp" data-url="https://me.orz.xyz/javascript-ajax/" data-title="Javascript原生使用Ajax" data-web><i class="fab fa-whatsapp fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Line" data-sharer="line" data-url="https://me.orz.xyz/javascript-ajax/" data-title="Javascript原生使用Ajax"><i class="fab fa-line fa-fw"></i></a><a href="javascript:void(0);" title="分享到 微博" data-sharer="weibo" data-url="https://me.orz.xyz/javascript-ajax/" data-title="Javascript原生使用Ajax" data-image="cover.jpg"><i class="fab fa-weibo fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Myspace" data-sharer="myspace" data-url="https://me.orz.xyz/javascript-ajax/" data-title="Javascript原生使用Ajax" data-description=""><i data-svg-src="/lib/simple-icons/icons/myspace.min.svg"></i></a><a href="javascript:void(0);" title="分享到 Blogger" data-sharer="blogger" data-url="https://me.orz.xyz/javascript-ajax/" data-title="Javascript原生使用Ajax" data-description=""><i class="fab fa-blogger fa-fw"></i></a><a href="javascript:void(0);" title="分享到 Evernote" data-sharer="evernote" data-url="https://me.orz.xyz/javascript-ajax/" data-title="Javascript原生使用Ajax"><i class="fab fa-evernote fa-fw"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw"></i>&nbsp;<a href="/tags/javascript/">javascript</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">返回</a></span>&nbsp;|&nbsp;<span><a href="/">主页</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/linux-common-command/" class="prev" rel="prev" title="Linux常用的命令"><i class="fas fa-angle-left fa-fw"></i>Linux常用的命令</a>
+            <a href="/top-n/" class="next" rel="next" title="TopN问题">TopN问题<i class="fas fa-angle-right fa-fw"></i></a></div>
+</div>
+<div id="comments"></div></article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2020</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank">ToddLam</a></span>&nbsp;|&nbsp;<span class="license"><a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="回到顶部">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="查看评论">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript">
+    window.config = {"code":{"copyTitle":"复制到剪贴板","maxShownLines":10},"comment":{},"headerMode":{"desktop":"fixed","mobile":"auto"},"search":{"lunrIndexURL":"/index.json","lunrLanguageCode":"zh","lunrSegmentitURL":"/lib/lunr/lunr.segmentit.js","noResultsFound":"没有找到结果","type":"lunr"}};
+</script><script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=Element.prototype.closest%2CrequestAnimationFrame%2CCustomEvent%2CPromise%2CObject.entries%2CObject.assign%2CObject.values%2Cfetch%2CElement.prototype.after%2CArray.prototype.fill%2CIntersectionObserver%2CArray.from%2CArray.prototype.find%2CMath.sign"></script><script type="text/javascript" src="/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/lib/autocomplete/autocomplete.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.stemmer.support.min.js"></script><script type="text/javascript" src="/lib/lunr/lunr.zh.min.js"></script><script type="text/javascript" src="/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/lib/object-fit-images/ofi.min.js"></script><script type="text/javascript" src="/lib/clipboard/clipboard.min.js"></script><script type="text/javascript" src="/lib/sharer/sharer.min.js"></script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

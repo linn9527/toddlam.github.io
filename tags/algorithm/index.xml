@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>algorithm - 标签 - TL-B</title>
+        <link>https://me.orz.xyz/tags/algorithm/</link>
+        <description>algorithm - 标签 - TL-B</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>toddlylin@hotmail.com (ToddLam)</managingEditor>
+            <webMaster>toddlylin@hotmail.com (ToddLam)</webMaster><lastBuildDate>Sat, 24 Mar 2018 17:07:24 &#43;0800</lastBuildDate><atom:link href="https://me.orz.xyz/tags/algorithm/" rel="self" type="application/rss+xml" /><item>
+    <title>TopN问题</title>
+    <link>https://me.orz.xyz/top-n/</link>
+    <pubDate>Sat, 24 Mar 2018 17:07:24 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://me.orz.xyz/top-n/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/cover.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item></channel>
+</rss>

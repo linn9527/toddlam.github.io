@@ -4,7 +4,79 @@
         <link>https://me.orz.xyz/posts/</link>
         <description>所有文章 | TL-B</description>
         <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>toddlylin@hotmail.com (ToddLam)</managingEditor>
-            <webMaster>toddlylin@hotmail.com (ToddLam)</webMaster><lastBuildDate>Thu, 07 Aug 2014 16:33:02 &#43;0800</lastBuildDate><atom:link href="https://me.orz.xyz/posts/" rel="self" type="application/rss+xml" /><item>
+            <webMaster>toddlylin@hotmail.com (ToddLam)</webMaster><lastBuildDate>Sat, 24 Mar 2018 17:07:24 &#43;0800</lastBuildDate><atom:link href="https://me.orz.xyz/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>TopN问题</title>
+    <link>https://me.orz.xyz/top-n/</link>
+    <pubDate>Sat, 24 Mar 2018 17:07:24 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://me.orz.xyz/top-n/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/cover.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
+    <title>Javascript原生使用Ajax</title>
+    <link>https://me.orz.xyz/javascript-ajax/</link>
+    <pubDate>Fri, 08 Apr 2016 17:05:24 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://me.orz.xyz/javascript-ajax/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/cover.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
+    <title>Linux常用的命令</title>
+    <link>https://me.orz.xyz/linux-common-command/</link>
+    <pubDate>Tue, 29 Mar 2016 16:54:34 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://me.orz.xyz/linux-common-command/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/cover.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
+    <title>LNMP 基础环境搭建</title>
+    <link>https://me.orz.xyz/linux-nginx-php-mysql/</link>
+    <pubDate>Mon, 28 Mar 2016 15:27:22 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://me.orz.xyz/linux-nginx-php-mysql/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/cover.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
+    <title>Apt包管理使用</title>
+    <link>https://me.orz.xyz/linux-package-manager-usage-apt/</link>
+    <pubDate>Sat, 16 Jan 2016 15:25:08 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://me.orz.xyz/linux-package-manager-usage-apt/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/cover.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
+    <title>Maven环境搭建</title>
+    <link>https://me.orz.xyz/maven-env-build/</link>
+    <pubDate>Thu, 26 Nov 2015 15:11:19 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://me.orz.xyz/maven-env-build/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/cover.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
+    <title>IIS开启错误调试</title>
+    <link>https://me.orz.xyz/iis-debug-mode/</link>
+    <pubDate>Thu, 26 Nov 2015 15:04:45 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://me.orz.xyz/iis-debug-mode/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/cover.jpg" referrerpolicy="no-referrer">
+            </div>]]></description>
+</item><item>
+    <title>Windows Server2003开启IIS和PHP环境</title>
+    <link>https://me.orz.xyz/php-fastcgi-on-winserver2003/</link>
+    <pubDate>Mon, 05 Oct 2015 14:54:27 &#43;0800</pubDate>
+    <author>作者</author>
+    <guid>https://me.orz.xyz/php-fastcgi-on-winserver2003/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/cover.jpg" referrerpolicy="no-referrer">
+            </div><p>难以理解为什么现在还有人用win去跑PHP</p>]]></description>
+</item><item>
     <title>Linux桌面环境美化</title>
     <link>https://me.orz.xyz/linux-desktop-reinforce/</link>
     <pubDate>Thu, 07 Aug 2014 16:33:02 &#43;0800</pubDate>
@@ -22,33 +94,5 @@
     <description><![CDATA[<div class="featured-image">
                 <img src="/cover.jpg" referrerpolicy="no-referrer">
             </div><p>就想自己折腾一下桌面环境搭建</p>]]></description>
-</item><item>
-    <title>笔记本上双系统安装</title>
-    <link>https://me.orz.xyz/duel-system-leptop/</link>
-    <pubDate>Tue, 05 Aug 2014 23:14:06 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://me.orz.xyz/duel-system-leptop/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/cover.jpg" referrerpolicy="no-referrer">
-            </div><p>linux 的好 都懂，windows 的好 也都懂，小孩子才做选择题「..「</p>]]></description>
-</item><item>
-    <title>Appfog 使用笔记</title>
-    <link>https://me.orz.xyz/appfog-usage/</link>
-    <pubDate>Sat, 21 Jun 2014 22:04:21 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://me.orz.xyz/appfog-usage/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/cover.jpg" referrerpolicy="no-referrer">
-            </div><p>本着娱乐的态度尝试了免费的AppFog云服务</p>]]></description>
-</item><item>
-    <title>Start The World</title>
-    <link>https://me.orz.xyz/why-bloging/</link>
-    <pubDate>Wed, 01 Sep 2010 00:00:00 &#43;0800</pubDate>
-    <author>作者</author>
-    <guid>https://me.orz.xyz/why-bloging/</guid>
-    <description><![CDATA[<div class="featured-image">
-                <img src="/cover.jpg" referrerpolicy="no-referrer">
-            </div><h2 id="why-blogging">Why Blogging</h2>
-<p>因为我行呀</p>]]></description>
 </item></channel>
 </rss>
